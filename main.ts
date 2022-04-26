@@ -21,5 +21,5 @@ input.onButtonPressed(Button.AB, function () {
         a = 0
         b = 0
     })
-    basic.showString("New round!")
+    basic.showString("New-round!")
 })
