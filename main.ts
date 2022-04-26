@@ -7,13 +7,19 @@ basic.forever(function () {
     basic.pause(1000)
 })
 input.onButtonPressed(Button.A, function () {
-    a++
+    control.inBackground(function() {
+        a++
+    })
 })
 input.onButtonPressed(Button.B, function () {
-    b++
+    control.inBackground(function() {
+        b++
+    })
 })
 input.onButtonPressed(Button.AB, function () {
-    a = 0
-    b = 0
+    control.inBackground(function() {
+        a = 0
+        b = 0
+    })
     basic.showString("New round!")
 })
